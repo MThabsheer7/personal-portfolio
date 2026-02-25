@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Thabsheer N P | AI Engineer</title>
+    <meta name="description"
+        content="Portfolio of Muhammad Thabsheer N P, an AI Engineer specializing in GenAI applications, LLM Finetuning, and MLOps.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN for simple, lightweight portfolio) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#0a0a0a',
+                        surface: '#121212',
+                        primary: '#f5f5f5',
+                        secondary: '#a1a1aa',
+                        accent: {
+                            DEFAULT: '#d4af37', // Gold
+                            hover: '#e5cd6e'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    maxWidth: {
+                        'container': '1200px'
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 2s infinite',
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards'
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles for complex animations requiring observers -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body
+    class="bg-background text-primary font-sans antialiased overflow-x-hidden selection:bg-accent selection:text-background">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 py-6 transition-all duration-300">
+        <div class="max-w-container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-xl md:text-2xl font-semibold tracking-tighter hover:opacity-80 transition-opacity">
+                thabsheer<span class="text-accent">.</span>
+            </a>
+
+            <!-- Desktop Links -->
+            <ul
+                class="hidden md:flex items-center space-x-10 text-sm tracking-widest uppercase text-secondary font-medium">
+                <li><a href="#about" class="hover:text-primary transition-colors">About</a></li>
+                <li><a href="#skills" class="hover:text-primary transition-colors">Skills</a></li>
+                <li><a href="#experience" class="hover:text-primary transition-colors">Experience</a></li>
+                <li><a href="#projects" class="hover:text-primary transition-colors">Work</a></li>
+            </ul>
+
+            <!-- CTA -->
+            <a href="#contact"
+                class="hidden md:inline-flex items-center justify-center px-6 py-2.5 border border-accent text-primary text-sm tracking-widest uppercase hover:bg-accent hover:text-background transition-colors duration-300 rounded-sm">
+                Let's Talk
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="md:hidden text-2xl text-primary focus:outline-none z-50">
+                <i class="ph ph-list" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-surface/95 backdrop-blur-md z-40 hidden flex-col items-center justify-center h-screen space-y-8">
+            <a href="#about"
+                class="mobile-link text-xl tracking-widest uppercase text-primary hover:text-accent transition-colors">About</a>
+            <a href="#skills"
+                class="mobile-link text-xl tracking-widest uppercase text-primary hover:text-accent transition-colors">Skills</a>
+            <a href="#experience"
+                class="mobile-link text-xl tracking-widest uppercase text-primary hover:text-accent transition-colors">Experience</a>
+            <a href="#projects"
+                class="mobile-link text-xl tracking-widest uppercase text-primary hover:text-accent transition-colors">Work</a>
+            <a href="#contact"
+                class="mobile-link mt-8 px-8 py-3 border border-accent text-primary uppercase tracking-widest hover:bg-accent hover:text-background transition-colors">Let's
+                Talk</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero"
+            class="relative min-h-[100svh] flex flex-col items-center justify-between pt-32 pb-8 px-6 overflow-hidden">
+            <!-- Radial background gradient simulating a spotlight -->
+            <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,_rgba(35,35,35,0.8)_0%,_rgba(10,10,10,1)_60%)] -z-10">
+            </div>
+
+            <!-- Spacer to balance vertical centering with the bottom indicator -->
+            <div class="h-10 w-full shrink-0"></div>
+
+            <div class="max-w-4xl mx-auto text-center z-10 animate-fade-in-up shrink-0 my-auto">
+                <h1
+                    class="text-[clamp(3.5rem,8vw,7rem)] leading-[1.05] tracking-tight font-light bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">
+                    AI Engineer <br>
+                    <span class="font-serif italic font-normal text-accent bg-none text-accent"
+                        style="-webkit-text-fill-color: var(--tw-colors-accent-DEFAULT);">&</span> BackendDeveloper
+                </h1>
+
+                <p class="mt-8 text-lg sm:text-xl text-secondary max-w-2xl mx-auto font-light leading-relaxed">
+                    Building and shipping production-grade GenAI applications <br class="hidden sm:block">
+                    for regulated domains.
+                </p>
+            </div>
+
+            <div
+                class="flex flex-col items-center gap-2 text-xs tracking-[0.2em] text-secondary opacity-60 animate-bounce-slow z-10 shrink-0 mt-12">
+                <span>MY WORK</span>
+                <i class="ph ph-arrow-down text-lg"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-32 px-6">
+            <div
+                class="max-w-container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 fade-up-element opacity-0">
+                <div class="lg:col-span-4">
+                    <h2 class="text-4xl md:text-5xl font-light tracking-tight">About Me</h2>
+                </div>
+                <div class="lg:col-span-8 text-lg md:text-xl text-secondary font-light space-y-6 leading-relaxed">
+                    <p>
+                        I am an AI Engineer with 3 years of experience specializing in secure RAG architectures, AI
+                        Agents,LLM fine-tuning, and scalable API-based AI services.
+                    </p>
+                    <p>
+                        My work focuses strongly on reliability, auditability, and cost-efficient AI deployment. I have
+                        successfully delivered an <strong class="font-medium text-primary">80% reduction</strong> in
+                        manual processing across workflows while maintaining <strong
+                            class="font-medium text-primary">99.9% uptime</strong> on AWS.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-8 pt-12 mt-12 border-t border-white/10">
+                        <div>
+                            <span class="block text-4xl md:text-5xl font-serif text-primary mb-2">3+</span>
+                            <span class="text-xs uppercase tracking-widest text-secondary font-medium">Years
+                                Experience</span>
+                        </div>
+                        <div>
+                            <span class="block text-4xl md:text-5xl font-serif text-primary mb-2">99.9%</span>
+                            <span class="text-xs uppercase tracking-widest text-secondary font-medium">Prod
+                                Uptime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-32 px-6 bg-surface/30">
+            <div class="max-w-container mx-auto fade-up-element opacity-0">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                    <h2 class="text-4xl md:text-5xl font-light tracking-tight">Capabilities</h2>
+                    <p class="text-secondary max-w-sm">The technical engine powering scalable and secure AI
+                        architectures.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5 border border-white/5">
+                    <!-- Skill Card 1 -->
+                    <div class="bg-surface p-10 md:p-14 group hover:bg-surface/80 transition-colors duration-500">
+                        <span
+                            class="font-serif text-3xl text-white/10 group-hover:text-accent transition-colors duration-500 mb-6 block">01</span>
+                        <h3 class="text-xl uppercase tracking-widest font-medium mb-4">Generative AI & LLMs</h3>
+                        <p class="text-secondary font-light leading-relaxed">Llama, JAIS, Qwen, GPT, Claude, Gemini,
+                            BERT, vLLM, PEFT (LoRA, QLoRA).</p>
+                    </div>
+                    <!-- Skill Card 2 -->
+                    <div class="bg-surface p-10 md:p-14 group hover:bg-surface/80 transition-colors duration-500">
+                        <span
+                            class="font-serif text-3xl text-white/10 group-hover:text-accent transition-colors duration-500 mb-6 block">02</span>
+                        <h3 class="text-xl uppercase tracking-widest font-medium mb-4">Retrieval Systems</h3>
+                        <p class="text-secondary font-light leading-relaxed">RAG, LangChain, LangGraph, Hybrid Search,
+                            RRF, Cross-Encoder Reranking.</p>
+                    </div>
+                    <!-- Skill Card 3 -->
+                    <div class="bg-surface p-10 md:p-14 group hover:bg-surface/80 transition-colors duration-500">
+                        <span
+                            class="font-serif text-3xl text-white/10 group-hover:text-accent transition-colors duration-500 mb-6 block">03</span>
+                        <h3 class="text-xl uppercase tracking-widest font-medium mb-4">Backend & APIs</h3>
+                        <p class="text-secondary font-light leading-relaxed">Python, SQL, FastAPI, REST APIs,
+                            WebSockets, Pydantic.</p>
+                    </div>
+                    <!-- Skill Card 4 -->
+                    <div class="bg-surface p-10 md:p-14 group hover:bg-surface/80 transition-colors duration-500">
+                        <span
+                            class="font-serif text-3xl text-white/10 group-hover:text-accent transition-colors duration-500 mb-6 block">04</span>
+                        <h3 class="text-xl uppercase tracking-widest font-medium mb-4">Infrastructure</h3>
+                        <p class="text-secondary font-light leading-relaxed">AWS, Docker, Kubernetes, MLFlow, ChromaDB,
+                            PostgreSQL, CI/CD.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-32 px-6">
+            <div class="max-w-container mx-auto fade-up-element opacity-0">
+                <h2 class="text-4xl md:text-5xl font-serif italic mb-20 text-center">Selected Experience</h2>
+
+                <div class="max-w-4xl mx-auto relative border-l border-accent/30 pl-8 md:pl-16 ml-4 md:ml-0">
+                    <!-- Timeline Item -->
+                    <div class="relative pb-16">
+                        <!-- Bullet -->
+                        <div
+                            class="absolute -left-[32.5px] md:-left-[64.5px] top-2 w-4 h-4 rounded-full bg-accent border-4 border-background shadow-[0_0_0_4px_rgba(212,175,55,0.2)]">
+                        </div>
+
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                            <div>
+                                <h3 class="text-2xl font-medium tracking-tight">Alphastream.ai</h3>
+                                <h4 class="text-lg text-primary/80 font-light mt-1">AI Engineer &mdash; NLP</h4>
+                            </div>
+                            <span class="font-serif italic text-accent opacity-80 shrink-0">Jun 2023 — Dec 2025</span>
+                        </div>
+
+                        <ul
+                            class="space-y-4 text-secondary font-light leading-relaxed list-outside list-disc p-4 rounded-lg bg-white/[0.02] border border-white/[0.05]">
+                            <li>Designed and deployed scalable NLP pipelines for financial and legal document automation
+                                on AWS, maintaining <strong>99.9% uptime</strong>.</li>
+                            <li>Reduced manual document review effort by <strong>80%</strong> (finance) and
+                                <strong>60%</strong> (legal) through fine-tuned classification systems.
+                            </li>
+                            <li>Fine-tuned BERT and LegalBERT models using PEFT (LoRA), improving multi-label
+                                classification F1 score from 0.70 to <strong>0.85+</strong>.</li>
+                            <li>Architected Hybrid RAG pipelines enabling high-recall multi-hop document intelligence.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-32 px-6">
+            <div class="max-w-container mx-auto fade-up-element opacity-0">
+                <div class="flex items-end justify-between mb-16 border-b border-white/10 pb-6">
+                    <h2 class="text-4xl md:text-5xl font-serif italic">Selected Work</h2>
+                    <a href="https://github.com/MThabsheer7" target="_blank"
+                        class="flex items-center gap-2 text-sm uppercase tracking-widest text-secondary hover:text-accent transition-colors pb-1">
+                        View GitHub <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
+                    <!-- Project 1 -->
+                    <a href="https://github.com/MThabsheer7" target="_blank" class="group block">
+                        <div
+                            class="relative aspect-[4/3] bg-surface rounded-sm overflow-hidden mb-6 border border-white/5">
+                            <!-- Placeholder graphic -->
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-10 group-hover:scale-105 transition-transform duration-700">
+                                <i class="ph ph-database text-9xl"></i>
+                            </div>
+                            <!-- Hover Overlay -->
+                            <div
+                                class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
+                                <div
+                                    class="bg-accent text-background rounded-full p-4 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                    <i class="ph ph-arrow-up-right text-2xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-2xl font-light mb-2 group-hover:text-accent transition-colors">Governed
+                                    RAG System</h3>
+                                <p class="text-secondary font-light">Secure on-prem RAG using Hybrid Search with
+                                    sub-second GPU latency.</p>
+                            </div>
+                            <span class="text-xs tracking-[0.2em] text-white/30 uppercase mt-2">Architecture</span>
+                        </div>
+                    </a>
+
+                    <!-- Project 2 -->
+                    <a href="https://github.com/MThabsheer7" target="_blank" class="group block md:mt-16">
+                        <div
+                            class="relative aspect-[4/3] bg-surface rounded-sm overflow-hidden mb-6 border border-white/5">
+                            <!-- Placeholder graphic -->
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-10 group-hover:scale-105 transition-transform duration-700">
+                                <i class="ph ph-camera text-9xl"></i>
+                            </div>
+                            <!-- Hover Overlay -->
+                            <div
+                                class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
+                                <div
+                                    class="bg-accent text-background rounded-full p-4 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                    <i class="ph ph-arrow-up-right text-2xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-2xl font-light mb-2 group-hover:text-accent transition-colors">Smart
+                                    Traffic Detection</h3>
+                                <p class="text-secondary font-light">Real-time edge detection (30+ FPS) using YOLO &
+                                    OpenVINO quantization.</p>
+                            </div>
+                            <span class="text-xs tracking-[0.2em] text-white/30 uppercase mt-2">Vision</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="pt-32 pb-12 px-6 border-t border-white/10 mt-20 relative overflow-hidden">
+        <!-- Subtle background glow -->
+        <div
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 bg-accent/5 blur-[100px] rounded-full pointer-events-none">
+        </div>
+
+        <div class="max-w-container mx-auto relative z-10">
+            <div class="text-center mb-32 fade-up-element opacity-0">
+                <h2 class="text-[clamp(2.5rem,6vw,4.5rem)] font-serif italic leading-tight mb-12">
+                    Have an idea? <br>
+                    <span class="font-sans font-light not-italic text-secondary">Let's build together.</span>
+                </h2>
+                <a href="mailto:mthabsheernp@gmail.com"
+                    class="inline-flex items-center gap-3 px-8 py-5 bg-accent text-background hover:bg-accent-hover font-medium uppercase tracking-widest text-sm transition-all duration-300 hover:-translate-y-1">
+                    Get in Touch <i class="ph ph-paper-plane-tilt text-lg"></i>
+                </a>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 text-sm text-secondary font-light">
+                <p>&copy; 2026 Muhammad Thabsheer N P. All rights reserved.</p>
+                <div class="flex items-center gap-8 uppercase tracking-widest text-xs font-medium">
+                    <a href="https://linkedin.com/in/muhammad-thabsheer-n-p" target="_blank"
+                        class="hover:text-accent transition-colors">LinkedIn</a>
+                    <a href="https://github.com/MThabsheer7" target="_blank"
+                        class="hover:text-accent transition-colors">GitHub</a>
+                    <a href="mailto:mthabsheernp@gmail.com" class="hover:text-accent transition-colors">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
