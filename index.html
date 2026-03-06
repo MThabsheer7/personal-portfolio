@@ -126,12 +126,12 @@
                     class="text-[clamp(3.5rem,8vw,7rem)] leading-[1.05] tracking-tight font-light bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">
                     AI Engineer <br>
                     <span class="font-serif italic font-normal text-accent bg-none text-accent"
-                        style="-webkit-text-fill-color: var(--tw-colors-accent-DEFAULT);">&</span> BackendDeveloper
+                        style="-webkit-text-fill-color: var(--tw-colors-accent-DEFAULT);">&</span> Backend Developer
                 </h1>
 
                 <p class="mt-8 text-lg sm:text-xl text-secondary max-w-2xl mx-auto font-light leading-relaxed">
-                    Building and shipping production-grade GenAI applications <br class="hidden sm:block">
-                    for regulated domains.
+                    Architecting secure, production-grade GenAI and LLM applications <br class="hidden sm:block">
+                    that drive scalable efficiency in regulated domains.
                 </p>
             </div>
 
@@ -156,9 +156,9 @@
                     </p>
                     <p>
                         My work focuses strongly on reliability, auditability, and cost-efficient AI deployment. I have
-                        successfully delivered an <strong class="font-medium text-primary">80% reduction</strong> in
+                        successfully delivered an <strong class="font-medium text-accent">80% reduction</strong> in
                         manual processing across workflows while maintaining <strong
-                            class="font-medium text-primary">99.9% uptime</strong> on AWS.
+                            class="font-medium text-accent">99.9% uptime</strong> on AWS.
                     </p>
 
                     <div class="grid grid-cols-2 gap-8 pt-12 mt-12 border-t border-white/10">
@@ -192,8 +192,11 @@
                         <span
                             class="font-serif text-3xl text-white/10 group-hover:text-accent transition-colors duration-500 mb-6 block">01</span>
                         <h3 class="text-xl uppercase tracking-widest font-medium mb-4">Generative AI & LLMs</h3>
-                        <p class="text-secondary font-light leading-relaxed">Llama, JAIS, Qwen, GPT, Claude, Gemini,
-                            BERT, vLLM, PEFT (LoRA, QLoRA).</p>
+                        <p class="text-secondary font-light leading-relaxed"><strong
+                                class="text-primary font-medium">Regional:</strong> JAIS. <strong
+                                class="text-primary font-medium">Open-Weights:</strong> Llama, Qwen. <strong
+                                class="text-primary font-medium">Proprietary:</strong> GPT, Claude, Gemini. <strong
+                                class="text-primary font-medium">Training:</strong> PEFT (LoRA, QLoRA).</p>
                     </div>
                     <!-- Skill Card 2 -->
                     <div class="bg-surface p-10 md:p-14 group hover:bg-surface/80 transition-colors duration-500">
@@ -245,15 +248,30 @@
                         </div>
 
                         <ul
-                            class="space-y-4 text-secondary font-light leading-relaxed list-outside list-disc p-4 rounded-lg bg-white/[0.02] border border-white/[0.05]">
-                            <li>Designed and deployed scalable NLP pipelines for financial and legal document automation
-                                on AWS, maintaining <strong>99.9% uptime</strong>.</li>
-                            <li>Reduced manual document review effort by <strong>80%</strong> (finance) and
-                                <strong>60%</strong> (legal) through fine-tuned classification systems.
+                            class="space-y-4 text-secondary font-light leading-relaxed p-4 rounded-lg bg-white/[0.02] border border-white/[0.05]">
+                            <li class="flex items-start gap-3">
+                                <i class="ph ph-check-circle text-accent mt-1 shrink-0 text-lg"></i>
+                                <span>Designed and deployed scalable NLP pipelines for financial and legal document
+                                    automation on AWS, maintaining <strong class="text-primary font-medium">99.9%
+                                        uptime</strong>.</span>
                             </li>
-                            <li>Fine-tuned BERT and LegalBERT models using PEFT (LoRA), improving multi-label
-                                classification F1 score from 0.70 to <strong>0.85+</strong>.</li>
-                            <li>Architected Hybrid RAG pipelines enabling high-recall multi-hop document intelligence.
+                            <li class="flex items-start gap-3">
+                                <i class="ph ph-check-circle text-accent mt-1 shrink-0 text-lg"></i>
+                                <span>Reduced manual document review effort by <strong
+                                        class="text-primary font-medium">80%</strong> (finance) and <strong
+                                        class="text-primary font-medium">60%</strong> (legal) through fine-tuned
+                                    classification systems.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="ph ph-check-circle text-accent mt-1 shrink-0 text-lg"></i>
+                                <span>Fine-tuned BERT and LegalBERT models using PEFT (LoRA), improving multi-label
+                                    classification F1 score from 0.70 to <strong
+                                        class="text-primary font-medium">0.85+</strong>.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="ph ph-check-circle text-accent mt-1 shrink-0 text-lg"></i>
+                                <span>Architected Hybrid RAG pipelines enabling high-recall multi-hop document
+                                    intelligence.</span>
                             </li>
                         </ul>
                     </div>
@@ -291,14 +309,29 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex justify-between items-start">
+                        <div class="flex flex-col h-full justify-between">
                             <div>
-                                <h3 class="text-2xl font-light mb-2 group-hover:text-accent transition-colors">Governed
-                                    RAG System</h3>
-                                <p class="text-secondary font-light">Secure on-prem RAG using Hybrid Search with
-                                    sub-second GPU latency.</p>
+                                <div
+                                    class="flex flex-col sm:flex-row sm:justify-between items-start mb-4 gap-2 sm:gap-4">
+                                    <h3 class="text-2xl font-light group-hover:text-accent transition-colors">Governed
+                                        RAG System</h3>
+                                    <span
+                                        class="text-xs tracking-[0.2em] text-accent/80 uppercase sm:mt-1 shrink-0">Architecture</span>
+                                </div>
+                                <div class="space-y-3 text-secondary font-light text-sm">
+                                    <p><strong class="text-primary font-medium">Challenge:</strong> Deploy a secure,
+                                        air-gapped RAG solution for highly regulated compliance documents without
+                                        exposing sensitive data.</p>
+                                    <p><strong class="text-primary font-medium">Architecture:</strong> Built on-premise
+                                        pipeline utilizing Hybrid Search (Vector + BM25 with RRF) and Cross-Encoder
+                                        reranking.</p>
+                                </div>
                             </div>
-                            <span class="text-xs tracking-[0.2em] text-white/30 uppercase mt-2">Architecture</span>
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <p class="text-sm font-light text-secondary"><strong
+                                        class="text-accent font-medium">Impact:</strong> Achieved sub-second GPU latency
+                                    ensuring strict data locality and governance.</p>
+                            </div>
                         </div>
                     </a>
 
@@ -320,14 +353,118 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex justify-between items-start">
+                        <div class="flex flex-col h-full justify-between">
                             <div>
-                                <h3 class="text-2xl font-light mb-2 group-hover:text-accent transition-colors">Smart
-                                    Traffic Detection</h3>
-                                <p class="text-secondary font-light">Real-time edge detection (30+ FPS) using YOLO &
-                                    OpenVINO quantization.</p>
+                                <div
+                                    class="flex flex-col sm:flex-row sm:justify-between items-start mb-4 gap-2 sm:gap-4">
+                                    <h3 class="text-2xl font-light group-hover:text-accent transition-colors">Smart
+                                        Traffic Detection</h3>
+                                    <span
+                                        class="text-xs tracking-[0.2em] text-accent/80 uppercase sm:mt-1 shrink-0">Vision</span>
+                                </div>
+                                <div class="space-y-3 text-secondary font-light text-sm">
+                                    <p><strong class="text-primary font-medium">Challenge:</strong> Process
+                                        high-resolution live video feeds on limited edge hardware for intelligent
+                                        traffic monitoring.</p>
+                                    <p><strong class="text-primary font-medium">Architecture:</strong> Full lifecycle
+                                        pipeline optimized via OpenVINO quantization running custom YOLO models on edge
+                                        devices.</p>
+                                </div>
                             </div>
-                            <span class="text-xs tracking-[0.2em] text-white/30 uppercase mt-2">Vision</span>
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <p class="text-sm font-light text-secondary"><strong
+                                        class="text-accent font-medium">Impact:</strong> Maintained 30+ FPS real-time
+                                    inference without requiring expensive cloud GPU instances.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 3 -->
+                    <a href="https://github.com/MThabsheer7" target="_blank" class="group block md:-mt-16">
+                        <div
+                            class="relative aspect-[4/3] bg-surface rounded-sm overflow-hidden mb-6 border border-white/5">
+                            <!-- Placeholder graphic -->
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-10 group-hover:scale-105 transition-transform duration-700">
+                                <i class="ph ph-cpu text-9xl"></i>
+                            </div>
+                            <!-- Hover Overlay -->
+                            <div
+                                class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
+                                <div
+                                    class="bg-accent text-background rounded-full p-4 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                    <i class="ph ph-arrow-up-right text-2xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col h-full justify-between">
+                            <div>
+                                <div
+                                    class="flex flex-col sm:flex-row sm:justify-between items-start mb-4 gap-2 sm:gap-4">
+                                    <h3
+                                        class="text-xl md:text-2xl font-light group-hover:text-accent transition-colors">
+                                        Transformer Implementation</h3>
+                                    <span
+                                        class="text-xs tracking-[0.2em] text-accent/80 uppercase sm:mt-1 shrink-0">Deep
+                                        Tech</span>
+                                </div>
+                                <div class="space-y-3 text-secondary font-light text-sm">
+                                    <p><strong class="text-primary font-medium">Challenge:</strong> Master the
+                                        foundational mathematics and engineering of modern LLMs beyond just API
+                                        wrappers.</p>
+                                    <p><strong class="text-primary font-medium">Architecture:</strong> Implemented a
+                                        full language model from scratch (Stanford CS336), including custom tokenizers,
+                                        positional embeddings, and multi-head attention.</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <p class="text-sm font-light text-secondary"><strong
+                                        class="text-accent font-medium">Impact:</strong> Proved rigorous engineering
+                                    capability essential for advanced model fine-tuning and debugging.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 4 -->
+                    <a href="https://github.com/MThabsheer7" target="_blank" class="group block">
+                        <div
+                            class="relative aspect-[4/3] bg-surface rounded-sm overflow-hidden mb-6 border border-white/5">
+                            <!-- Placeholder graphic -->
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-10 group-hover:scale-105 transition-transform duration-700">
+                                <i class="ph ph-globe-hemisphere-east text-9xl"></i>
+                            </div>
+                            <!-- Hover Overlay -->
+                            <div
+                                class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
+                                <div
+                                    class="bg-accent text-background rounded-full p-4 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                    <i class="ph ph-arrow-up-right text-2xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col h-full justify-between">
+                            <div>
+                                <div
+                                    class="flex flex-col sm:flex-row sm:justify-between items-start mb-4 gap-2 sm:gap-4">
+                                    <h3 class="text-2xl font-light group-hover:text-accent transition-colors">AI
+                                        Engineer @ nybl</h3>
+                                    <span
+                                        class="text-xs tracking-[0.2em] text-accent/80 uppercase sm:mt-1 shrink-0">Freelance</span>
+                                </div>
+                                <div class="space-y-3 text-secondary font-light text-sm">
+                                    <p><strong class="text-primary font-medium">Challenge:</strong> Rapidly prototype
+                                        and integrate specialized GenAI features into existing enterprise products.</p>
+                                    <p><strong class="text-primary font-medium">Architecture:</strong> Built optimized
+                                        microservices using FastAPI, seamlessly connecting open-weight LLMs with
+                                        business logic.</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <p class="text-sm font-light text-secondary"><strong
+                                        class="text-accent font-medium">Impact:</strong> Delivered scalable features
+                                    that directly enhanced product capabilities and industry momentum.</p>
+                            </div>
                         </div>
                     </a>
                 </div>
