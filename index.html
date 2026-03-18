@@ -8,6 +8,8 @@
     <meta name="description"
         content="Portfolio of Muhammad Thabsheer N P, an AI Engineer specializing in GenAI applications, LLM Finetuning, and MLOps.">
 
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,9 +170,9 @@
                                 Experience</span>
                         </div>
                         <div>
-                            <span class="block text-4xl md:text-5xl font-serif text-primary mb-2">99.9%</span>
-                            <span class="text-xs uppercase tracking-widest text-secondary font-medium">Prod
-                                Uptime</span>
+                            <span class="block text-4xl md:text-5xl font-serif text-primary mb-2">80%</span>
+                            <span class="text-xs uppercase tracking-widest text-secondary font-medium">Manual Effort
+                                Reduction</span>
                         </div>
                     </div>
                 </div>
@@ -242,7 +244,7 @@
         <!-- Experience Section -->
         <section id="experience" class="py-32 px-6">
             <div class="max-w-container mx-auto fade-up-element opacity-0">
-                <h2 class="text-4xl md:text-5xl font-serif italic mb-20 text-center">Selected Experience</h2>
+                <h2 class="text-4xl md:text-5xl font-serif italic mb-20 text-center">My Experience</h2>
 
                 <div class="max-w-4xl mx-auto relative border-l border-accent/30 pl-8 md:pl-16 ml-4 md:ml-0">
                     <!-- Timeline Item -->
@@ -401,6 +403,44 @@
                             </div>
                         </div>
                     </a>
+
+                    <!-- Project 3 -->
+                    <a href="https://github.com/MThabsheer7/research_app" target="_blank" class="group block">
+                        <div
+                            class="relative aspect-[4/3] bg-surface rounded-sm overflow-hidden mb-6 border border-white/5">
+                            <!-- Project Image -->
+                            <img src="assets/deep_research.webp" alt="Deep Research Agent cover image"
+                                class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
+                            <!-- Hover Overlay -->
+                            <div
+                                class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
+                                <div
+                                    class="bg-accent text-background rounded-full p-4 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                    <i class="ph ph-arrow-up-right text-2xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col h-full justify-between">
+                            <div>
+                                <div
+                                    class="flex flex-col sm:flex-row sm:justify-between items-start mb-4 gap-2 sm:gap-4">
+                                    <h3 class="text-2xl font-light group-hover:text-accent transition-colors">Deep
+                                        Research Agent</h3>
+                                    <span
+                                        class="text-xs tracking-[0.2em] text-accent/80 uppercase sm:mt-1 shrink-0">Architecture</span>
+                                </div>
+                                <div class="space-y-3 text-secondary font-light text-sm">
+                                    <p><strong class="text-primary font-medium">Goal:</strong> Develop a self-improving
+                                        deep research agent that decomposes queries, integrates human feedback, and
+                                        produces high-quality, citation-grounded reports.</p>
+
+                                    <p><strong class="text-primary font-medium">Architecture:</strong> Stateful agent
+                                        pipeline using LangGraph, powered by Gemini for reasoning, Tavily for real-time
+                                        retrieval, and Vite.js for a responsive research interface.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -420,6 +460,7 @@
                     <span class="font-sans font-light not-italic text-secondary">Let's build together.</span>
                 </h2>
                 <a href="mailto:mthabsheernp@gmail.com"
+                    onclick="navigator.clipboard.writeText('mthabsheernp@gmail.com');"
                     class="inline-flex items-center gap-3 px-8 py-5 bg-accent text-background hover:bg-accent-hover font-medium uppercase tracking-widest text-sm transition-all duration-300 hover:-translate-y-1">
                     Get in Touch <i class="ph ph-paper-plane-tilt text-lg"></i>
                 </a>
@@ -432,7 +473,9 @@
                         class="hover:text-accent transition-colors">LinkedIn</a>
                     <a href="https://github.com/MThabsheer7" target="_blank"
                         class="hover:text-accent transition-colors">GitHub</a>
-                    <a href="mailto:mthabsheernp@gmail.com" class="hover:text-accent transition-colors">Email</a>
+                    <a href="mailto:mthabsheernp@gmail.com"
+                        onclick="navigator.clipboard.writeText('mthabsheernp@gmail.com');"
+                        class="hover:text-accent transition-colors">Email</a>
                 </div>
             </div>
         </div>
